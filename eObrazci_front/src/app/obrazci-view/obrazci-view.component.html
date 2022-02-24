@@ -1,0 +1,61 @@
+<p></p>
+<p></p>
+<br><br>
+
+
+
+<div class="searchInput">
+    <label class="searchInput">Ime:</label>
+    <input class="searchInput"(keyup)="onKeyIme($event)" type="text"><br>
+    <label class="searchInput">Priimek:</label>
+    <input class="searchInput"(keyup)="onKeyPriimek($event)" type="text">
+</div>
+<br>
+    
+    
+    
+<p></p>      
+    <input type="submit" value="Nov obrazec" routerLink="novObrazec" />     
+    <p></p>
+
+    <table id="pdfTable" #pdfTable>
+    
+    <div class="flex">
+        <a class="inline1" (click)="sortById()"><div class = "inline1">ID </div></a>
+        <a class="inline1" (click)="sortByIme()"><div  class = "inline1">IME </div></a>
+        <a class="inline1" (click)="sortByPriimek()"><div  class = "inline1">PRIIMEK </div></a>
+        <a class="inline1" (click)="sortByNaslov()"><div  class = "inline1">NASLOV </div></a>
+        <a class="inline1" (click)="sortByKraj()"><div  class = "inline1">KRAJ </div></a>
+        <a class="inline1" (click)="sortByDrzava()"><div  class = "inline1">DRZAVA </div></a>
+        <a class="inline1" (click)="sortBySpol()"><div  class = "inline1">SPOL </div></a>
+        <a class="inline1"><div  class = "inline1">ADD </div></a>   
+    
+    </div>
+
+    <div id="content" #content>
+    <div class = "flex" *ngFor="let obrazec of obrazci" >
+    <div class = "close" *ngIf="(obrazec.ime.toUpperCase() == inputIme.toUpperCase() || inputIme == '') && (obrazec.priimek.toUpperCase() == inputPriimek.toUpperCase() || inputPriimek == '') ">
+    <div class = "inline">{{obrazec.id}} </div>
+    <div class = "inline">{{obrazec.ime}} </div>
+    <div class = "inline">{{obrazec.priimek}}</div>
+    <div class = "inline">{{obrazec.imeUlice}} {{obrazec.stevilkaUlice}}</div>
+    <div class = "inline"> {{obrazec.kraj}} {{obrazec.postnaStevilka}}</div>
+    <div class = "inline">{{obrazec.drzava}}</div>
+    <div class = "inline">{{obrazec.spol}}</div>
+    <div class = "inline"> 
+    <a href="obrazci" rel="vidbox" title="izbrisi">
+      <img class = "flex" src="/assets/img/delete.png" width=20px (click)="deleteObrazci(obrazec.id)">
+    </a>    
+    <a href="/obrazci/{{obrazec.id}}/izpiti" rel="vidbox" title="izpiti">
+        <img class = "flex" src="/assets/img/podrobnosti.png" width=20px>
+      </a>
+    </div> 
+    </div>
+    </div> 
+</div>
+
+</table>
+
+<input type="submit" value="Izvozi PDF" (click)="exportPdf()" />
+
+

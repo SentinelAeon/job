@@ -1,0 +1,33 @@
+
+
+
+<br><br>
+
+<div *ngIf="obrazec">
+
+
+<form>   
+    <label class="searchInput">Ime:</label>
+    <input class="searchInput" type="text" name="ime" [(ngModel)]="obrazec.ime"><br>    
+    <label class="searchInput" for="lname">Priimek:</label>
+    <input class="searchInput" type="text" name="priimek" [(ngModel)]="obrazec.priimek"><br>
+    <label class="searchInput" for="fname">Ulica:</label>
+    <input class="searchInput" type="text" name="imeUlice" [(ngModel)]="obrazec.imeUlice" ><br>
+    <label class="searchInput" for="lname">Stevilka ulice:</label>
+    <input class="searchInput" type="text" name="stevilkaUlice" [(ngModel)]="obrazec.stevilkaUlice" ><br>
+    <label class="searchInput" for="fname">Kraj:</label>
+    <input class="searchInput" type="text" name="postnaStevilka" [(ngModel)]="obrazec.kraj"><br>
+    <label class="searchInput" for="lname">Postna stevilka:</label>
+    <input class="searchInput" type="text" name="kraj" [(ngModel)]="obrazec.postnaStevilka"><br>
+    <label class="searchInput" for="lname">Drzava:</label>
+    <input class="searchInput" type="text" name="drzava" [(ngModel)]="obrazec.drzava" ><br>
+    <label class="searchInput" for="lname">Spol:</label>
+    <input class="searchInput" type="text" name="spol" [(ngModel)]="obrazec.spol" ><br> <br>  
+    <input class="searchInput" type="submit" value="Dodaj obrazec" (click)="dodajObrazec()"  /> 
+  </form>
+
+   
+
+
+</div>
+

@@ -1,0 +1,95 @@
+div.inline{   
+    padding-top: 8px;
+    text-decoration: none;    
+    display: inline-block;
+    background-color: #eee;
+    width: 30%;         
+    /*border-color: red;
+    border-style: solid;*/
+    vertical-align: middle;
+    text-align:center;       
+}
+
+div.inline1{   
+    padding: 2px;
+    text-decoration: none;    
+    display: inline-block;
+    background-color: #eee;
+    width: 30%;         
+    /*border-color: red;
+    border-style: solid;*/
+    vertical-align: middle;
+    text-align:center;       
+}
+
+a.inline1{   
+    padding: 2px;
+    text-decoration: none;    
+    display: inline-block;
+    background-color: #eee;
+    width: 30%;         
+    /*border-color:greenyellow;
+    border-style: solid;*/
+    vertical-align: middle;
+    text-align:center;  
+    cursor: pointer;     
+}
+
+div.flex{
+    margin: 5px;
+    text-decoration: none;    
+    display: flex;
+    background-color: #eee;    
+    width: 45%;
+    /*border-color: black;
+    border-style: solid;*/ 
+}
+
+img.flex { 
+    padding-top: 6px; 
+    padding-left: 6px;  
+    /*border-color: yellow;
+    border-style: solid;*/ 
+
+
+}
+
+div.close {  
+    margin: 5px;
+    text-decoration: none;    
+    display: flex;   
+    width: 100%;
+    /*border-color: green;
+    border-style: solid;*/ 
+    
+}
+
+div.searchInput {
+    width: 35%; 
+    display: inline-block;
+    /*border-color: green;
+    border-style: solid;*/
+}
+
+label.searchInput { 
+    display: inline-block;
+    width: 10%;   
+    /*border-color: brown;
+    border-style: solid;*/
+}
+
+input.searchInput {   
+    display: inline-block;
+    width: 20%;   
+    /*border-color: blueviolet;
+    border-style: solid;*/
+}
+
+table {
+
+    /*border-color: blueviolet;
+    border-style: solid;*/
+    width: 100%;
+
+}
+

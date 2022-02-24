@@ -1,0 +1,38 @@
+<p></p>
+
+<div *ngIf="obrazec">
+    
+    <div class="tekst">{{obrazec.ime}} {{obrazec.priimek}}</div>
+
+    <form>   
+        <label class="searchInput">Naziv:</label>
+        <input class="searchInput" name="ime" [(ngModel)]="izpit.naziv"><br>    
+        <label class="searchInput">Datum:</label>
+        <input class="searchInput" type="text" name="priimek" [(ngModel)]="izpit.datum"><br>
+        <label class="searchInput">Ocena:</label>
+        <input class="searchInput" type="text" name="imeUlice" [(ngModel)]="izpit.ocena" ><br><br>        
+        <input type="submit" value="Dodaj izpit" (click)="dodajIzpit()"  routerLink="." /> 
+      </form>  
+
+
+
+       
+<div *ngIf="obrazec.izpiti">
+    <div class = "flex" *ngFor="let izpit of obrazec?.izpiti" >
+    
+        <div class = "inline">{{izpit.id}} </div>
+        <div class = "inline">{{izpit.naziv}}</div>
+        <div class = "inline">{{izpit.datum}}</div>
+        <div class = "inline">{{izpit.ocena}}</div>   
+        <a href="obrazci/{{obrazec.id}}/izpiti" >
+            <img class = "flex" src="/assets/img/delete.png" width=20px (click)="deleteIzpit(izpit.id)">
+        </a>      
+    </div>   
+</div>  
+
+</div>
+
+
+
+
+

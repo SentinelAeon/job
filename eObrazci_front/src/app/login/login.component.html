@@ -1,0 +1,16 @@
+<p></p>
+
+
+
+
+
+<div class="login">
+<form>      
+    <label class="searchInput">Username:</label>
+    <input class="searchInput"type="text" name="username" [(ngModel)]="loginObject.username" ><br>
+    <label class="searchInput">Password:</label>
+    <input class="searchInput"type="text" name="password" [(ngModel)]="loginObject.password" ><br> <br> 
+    <input type="submit" value="Login"   (click)="login()"  /> 
+  </form>
+</div>
+

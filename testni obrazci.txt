@@ -1,0 +1,32 @@
+ {
+   "ime" : "Kristijan",
+    "priimek" : "Stuhec",
+    "imeUlice" : "Topniska",
+    "stevilkaUlice" : "12",
+    "postnaStevilka" : "1000",
+    "kraj" : "Ljubljana",
+    "drzava" : "Slovenija",
+    "spol" : "Moski"
+ }   
+
+ {
+   "ime" : "Karmen",
+    "priimek" : "Gostisa",
+    "imeUlice" : "Slovenska",
+    "stevilkaUlice" : "15",
+    "postnaStevilka" : "1360",
+    "kraj" : "Vrhnika",
+    "drzava" : "Slovenija",
+    "spol" : "Zenska"
+ } 
+
+{
+   "ime" : "Filip",
+    "priimek" : "Senegacnik",
+    "imeUlice" : "Hrenova",
+    "stevilkaUlice" : "19",
+    "postnaStevilka" : "1000",
+    "kraj" : "Ljubljana",
+    "drzava" : "Slovenija",
+    "spol" : "Moski"
+ }

@@ -1,0 +1,21 @@
+div.login {
+    margin: 20% 35%;
+    width: 20%;
+    height: 10%;
+    /*border: 5px solid #FFFF00;*/
+    padding: 10px;
+}
+
+label.searchInput { 
+    display: inline-block;
+    width: 20%;   
+    /*border-color: brown;
+    border-style: solid;*/
+}
+
+input.searchInput {   
+    display: inline-block;
+    width: 30%;   
+    /*border-color: blueviolet;
+    border-style: solid;*/
+}
